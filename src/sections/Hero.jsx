@@ -84,7 +84,7 @@ export const Hero = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Crafting <span className="text-primary glow-text">digital</span>
                 <br />
                 experiences with
@@ -99,13 +99,18 @@ export const Hero = () => {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <a href="#contact">
-                <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+            <div className="flex flex-col sm:flex-row sm:gap-4 gap-2 animate-fade-in animation-delay-300">
+              <a href="#contact" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
               </a>
-              <AnimatedBorderButton href="/sojib_resume.pdf" target="_blank" rel="noopener noreferrer">
+              <AnimatedBorderButton
+                href="/sojib_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
@@ -183,7 +188,7 @@ export const Hero = () => {
             />
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => (
-                <div key={idx} className="flex-shrink-0 px-8 py-4">
+                <div key={idx} className="flex-shrink-0 px-6 py-4">
                   <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
                     {skill}
                   </span>
