@@ -90,7 +90,7 @@ export const Hero = () => {
                 experiences with
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  precision
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl animate-fade-in animation-delay-200">
