@@ -26,17 +26,16 @@ const experiences = [
     technologies: ["React", "JavaScript", "CSS", "HTML"],
     current: false,
   },
-  {
-    period: "Aug 2025 — Oct 2025",
-    role: "Junior Software Engineer",
-    company: "Nexcent Tech Ltd",
-    description:
-      "Worked on building and maintaining web applications, implementing features, and collaborating with the backend team.",
-    technologies: ["React", "Node.js", "TypeScript", "REST APIs"],
-    current: true,
-  },
+  // {
+  //   period: "Aug 2025 — Oct 2025",
+  //   role: "Junior Software Engineer",
+  //   company: "Nexcent Tech Ltd",
+  //   description:
+  //     "Worked on building and maintaining web applications, implementing features, and collaborating with the backend team.",
+  //   technologies: ["React", "Node.js", "TypeScript", "REST APIs"],
+  //   current: true,
+  // },
 ];
-
 
 export const Experience = () => {
   return (

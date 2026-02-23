@@ -38,7 +38,6 @@ const skills = [
   "Vercel",
 ];
 
-
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -94,7 +93,10 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl animate-fade-in animation-delay-200">
-              Hi, I’m Md. Sajib Miah, a Front-end developer experienced in React, Next.js, and TypeScript. I build modern web applications with a strong focus on performance, scalability, and clean architecture.
+                Hi, I’m Md. Sajib Miah, a Front-end developer experienced in
+                React, Next.js, and TypeScript. I build modern web applications
+                with a strong focus on performance, scalability, and clean
+                architecture.
               </p>
             </div>
 
@@ -106,7 +108,7 @@ export const Hero = () => {
                 </Button>
               </a>
               <AnimatedBorderButton
-                href="/sojib_resume.pdf"
+                href="/MD_Sajib_Miah_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
@@ -121,7 +123,10 @@ export const Hero = () => {
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
                 { icon: Github, href: "https://github.com/mdsojibmiah" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/mdsojibmiah/" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/mdsojibmiah/",
+                },
                 { icon: Twitter, href: "#" },
               ].map((social, idx) => (
                 <a

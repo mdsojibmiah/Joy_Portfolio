@@ -22,6 +22,23 @@ const projects = [
     github: "https://github.com/mdsojibmiah/bpmosquegrave",
   },
   {
+    title: "QuickCart Ecommerce",
+    description:
+      "A full-stack e-commerce website built with Next.js, MongoDB, Tailwind CSS, Clerk, and Inngest, featuring user authentication, cart functionality, admin panel, and deployment.",
+    image: "/projects/Project-5.png",
+    tags: [
+      "Next.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Clerk",
+      "Inngest",
+      "Cloudinary",
+      "Vercel",
+    ],
+    link: "https://quick-cart-one-taupe.vercel.app/",
+    github: "https://github.com/mdsojibmiah/QuickCart",
+  },
+  {
     title: "AI Thumbnail Generator App",
     description:
       "A full-stack AI thumbnail generator using React and MERN stack. Implemented user authentication, stored generated thumbnails in MongoDB, and integrated Google Gemini API for AI-powered thumbnail creation.",
