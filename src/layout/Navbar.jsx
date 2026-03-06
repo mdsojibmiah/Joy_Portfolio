@@ -35,7 +35,7 @@ export const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          Sajib<span className="text-primary">.</span>
+          Emon Saha<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -55,7 +55,9 @@ export const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <a href="#contact"><Button size="sm">Contact Me</Button></a>
+          <a href="#contact">
+            <Button size="sm">Contact Me</Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
