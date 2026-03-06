@@ -43,7 +43,7 @@ export const Hero = () => {
       </div>
 
       {/* Floating Green Dots */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(30)].map((_, i) => (
           <div
             key={i}
@@ -59,7 +59,7 @@ export const Hero = () => {
             }}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* CONTENT */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
@@ -180,9 +180,7 @@ export const Hero = () => {
                 {/* Experience */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="text-2xl font-bold text-primary">1+</div>
-                  <div className="text-xs text-muted-foreground">
-                    Years Experience
-                  </div>
+                  <div className="text-xs text-white">Years Experience</div>
                 </div>
               </div>
             </div>
