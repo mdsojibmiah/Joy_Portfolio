@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
-@theme {
+/* @theme {
   --color-background: #0f1418;
   --color-foreground: #f0f2f5;
 
   --color-card: #141a1f;
 
   --color-primary: #20b2a6;
-  /* --color-primary: #25d366; */
-  
+
   --color-primary-foreground: #ffffff;
 
   --color-secondary: #1f2830;
@@ -23,6 +22,29 @@
 
   --color-highlight: #f5a623;
   --color-surface: #1a2329;
+} */
+
+@theme {
+  --color-background: #0b0f19;
+  --color-foreground: #f4f6ff;
+
+  --color-card: #12172a;
+
+  --color-primary: #5e36ff;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #1a2040;
+  --color-secondary-foreground: #8f74ff;
+
+  --color-muted: #1f2545;
+  --color-muted-foreground: #8a90b3;
+
+  --color-border: #222753;
+
+  --radius: 0.75rem;
+
+  --color-highlight: #8b6cff;
+  --color-surface: #151a33;
 }
 
 @layer base {
@@ -64,8 +86,8 @@
   }
 
   .glow-border {
-    box-shadow: 0 0 20px
-        color-mix(in srgb, var(--color-primary) 20%, transparent),
+    box-shadow:
+      0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent),
       inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
   }
 }
@@ -179,8 +201,78 @@
   }
 
   .timeline-glow {
-    box-shadow: 0 0 40px
-        color-mix(in srgb, var(--color-primary) 35%, transparent),
+    box-shadow:
+      0 0 40px color-mix(in srgb, var(--color-primary) 35%, transparent),
       0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
+  }
+}
+
+/* =========================
+   MARQUEE ANIMATION
+========================= */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+/* =========================
+   OPTIONAL HERO ANIMATIONS
+========================= */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease forwards;
+}
+
+/* floating card animation */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* slow drifting dots */
+
+@keyframes slow-drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
